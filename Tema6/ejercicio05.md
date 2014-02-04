@@ -1,4 +1,4 @@
-[-- Ejercicio 4 --](./ejercicio06.md)
+[-- Ejercicio 4 --](./ejercicio04.md)
 
 ------------------
 
@@ -139,4 +139,4 @@ end script
 
 ------------------
 
-[-- Ejercicio 6 --](./ejercicio08.md)
+[-- Ejercicio 6 --](./ejercicio06.md)
