@@ -13,7 +13,7 @@
 
 * Forma rápida:
 
-	# curl -L https://www.opscode.com/chef/install.sh | bash
+        # curl -L https://www.opscode.com/chef/install.sh | bash
 
     En caso de no tener "curl" y no querer instalarlo:
 
