@@ -6,7 +6,8 @@
 
 ### Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.
 
-Formas de instalar
+**Instalamos ansible**:
+
 * Como módulo:
 
         # apt-get install python-pip
@@ -19,14 +20,14 @@ Formas de instalar
     > Disponible en los "backports/universe" de ubuntu o en `ppa:rquillo/ansible`
 
 
-Añadimos nuestro host (vmej5.cloudapp.net) al fichero de hosts:
+**Añadimos nuestro host** (*vmej5.cloudapp.net*) al fichero de hosts:
 
     # echo -e "[azure]\nvmej5.cloudapp.net" >> /etc/ansible/hosts
 
 > En caso de querer usar un fichero de configuración distinto al "/etc/ansible/hosts" habrá que especificar la ruta de dicho fichero con la variable de entorno "ANSIBLE_HOSTS".
 
 
-Comprobamos:
+**Comprobamos** que se funciona el host correctamente:
 
     # ansible azure -u melki -m ping --ask-pass 
 
@@ -39,15 +40,15 @@ Comprobamos:
     > De esta forma tendremos acceso ssh sin necesidad de poner manualmente una contraseña: `$ ansible azure -u melki -m ping`
 
 
-Desplegamos los fuentes:
+**Desplegamos** los fuentes:
 
     $ ansible azure -u melki -m git -a "repo=https://github.com/FdezI/Practica2.git dest=~/pr2_iv_dai"
 
-> Si nos muestra el error "Failed to find required executable git" es debido a que la máquina 	remota no tiene git instalado:
+> Si nos muestra el error "Failed to find required executable git" es debido a que la máquina remota no tiene git instalado:
 
     $ ansible azure -u melki -m apt -a "pkg=git"
 
-Comprobamos:
+**Comprobamos** que se han desplegado correctamente los fuentes remotos:
 
     [vmej5]$ tree ~/pr2_iv_dai
 
