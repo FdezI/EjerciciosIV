@@ -47,7 +47,7 @@ Mediante la interfaz web buscamos "nginx" e instalamos el 'charm' correspondient
 
 ------------------
 
-> El [script del tema 3, autojuju.sh](../Tema3/autojuju.sh), junto con el parámetro **azure**, instalará juju, y lo configurará (creando, incluso, los certificados) automáticamente.
+> El [script del tema 3, autojuju.sh](../Tema3/autojuju.sh), junto con el parámetro **azure**, instalará juju, y lo configurará (creando, incluso, los certificados) automáticamente para ser usado con azure.
 
 ------------------
 
