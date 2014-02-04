@@ -1,4 +1,4 @@
-[--Ejercicio 2--](./ejercicio02.md)
+[-- Ejercicio 2 --](./ejercicio02.md)
 
 ------------------------------------
 
@@ -51,4 +51,4 @@ Si queremos que "chrootee" automáticamente:
 
 ---------------------------------------
 
-[Ejercicio 4](./ejercicio04.md)
+[-- Ejercicio 4 --](./ejercicio04.md)
