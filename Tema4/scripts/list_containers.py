@@ -1,5 +1,11 @@
 #! /usr/bin/python
 
+# Autor: Iñaki Fernández Janssens de Varebeke
+# e-mail: inakitinajo@gmail.com
+# Fecha 01/2014
+# Licencia: GPLv1
+
+
 from azure.storage import *
 import sys
 import os
