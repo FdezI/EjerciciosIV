@@ -49,4 +49,4 @@ Llegados a este punto está (si no se ha cometido ningún error ni saltado ning�
 
 ------------------
 
-[-- Tema 3, ejercicio 1 --](../Tema3/ejercicio01.md)
+[**-- Tema 3 --**](../Tema3)
