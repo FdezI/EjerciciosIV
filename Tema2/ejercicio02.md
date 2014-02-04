@@ -25,18 +25,14 @@ Asignarle la tarjeta wifi a la interfaz virtual
 
     # brctl addif virtual1 wlan0
 
-    Para quitarla:
-
-        # brctl delif virtual1 wlan0
+> Para quitarla: `# brctl delif virtual1 wlan0`
 
 
 #### Solución a can't add wlan0 to bridge virtual1: Operation not supported
 
     # iw dev wlan0 set 4addr on
-
-    Para desactivarlo:
-
-        # iw dev wlan0 set 4addr off
+    
+> Para desactivarlo: `# iw dev wlan0 set 4addr off`
 
 Esta solución requiere que activemos el modo WDS (Wirless Distributed System) en el router y añadamos la mac del dispositivo a conectarse por razones de seguridad. Aunque muchos routers que no disponen de esta opción por defecto pueden disponer de ella al actualizar su firmware no siempre se puede, por lo que éste nos limite la posibilidad de llevar esta tarea a cabo.
 
@@ -48,19 +44,15 @@ Añadir interfaz:
 
     # iw dev wlan0 interface add wds0 type managed 4addr on
 
-    Eliminar interfaz:
-
-        # iw dev wds0 del
+> Eliminar interfaz:`# iw dev wds0 del`
 
 
 Modificar mac:
 
     # ip link set dev wds0 addr 00:11:22:33:44:55
 
-    De esta forma tanto la interfaz puente como la original se conectarían simultáneamente sin problema alguno. No todas las tarjetas wireless soportan tener dos interfaces iniciadas al mismo tiempo, impidiendo esta configuración (siempre es posible tener dos tarjetas wifi, una para usar con la 3addr y otra para usos con la 4addr).
-
-    # iw dev mon0 set type monitor
-
+    De esta forma tanto la interfaz puente como la original se conectarían simultáneamente sin problema alguno. No todas las tarjetas wireless soportan tener dos interfaces iniciadas al mismo tiempo, impidiendo esta configuración (siempre es posible tener dos tarjetas wifi).
+    
 
 -----------------------
 
