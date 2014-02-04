@@ -1,0 +1,10 @@
+- hosts: vagrant
+  sudo: yes
+  tasks:
+    - name: Instalar última versión de nginx
+      apt: name=nginx state=latest
+      notify:
+      - restart nginx
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
