@@ -1,4 +1,4 @@
-[-- Ejercicio 4 --](./ejercicio06.md)
+[-- Ejercicio 4 --](./ejercicio04.md)
 
 ------------------
 
@@ -98,11 +98,11 @@ Además, para ejecutar este **playbook** crearemos un script de arranque:
 
 De esta forma será más sencillo modificar o añadir acciones y tenerlo todo modularizado, además de poder realizar acciones según la necesidad, de forma que:
 
-    ./ansible provision.yml
+    $ ./ansible provision.yml
 
 > Provisiona y despliega
 
-    ./ansible deploy.yml
+    $ ./ansible deploy.yml
 
 > Despliega únicamente
 
@@ -112,9 +112,13 @@ Para poder acceder desde el exterior configuraremos un **endpoint de azure**:
     $ azure vm endpoint create -n webpy vmej5 80 8080
 
 
-** Problemas:**  En un principio, para iniciar el comando lo convertí en una tarea asíncrona de ansible, tal y como se cuenta en http://docs.ansible.com/playbooks_async.html. Esto, desgraciadamente, no funciona para tareas que queremos que estén corriendo de forma "infinita", ya que al completarse el tiempo especificado en "async" se cierra automáticamente el proceso por mucho que se establezca a 0 el chequeo de aplicación en marcha ("poll"). Por ello, una opción es convertir nuestro proceso en un "servicio upstart", permitiendo así iniciar/detener el servicio mediante el comando `# service <servicio> start/stop`
+------------------
 
-Para ello creamos el [script de "upstart"](./daibook/templates/webpyupstart.conf) y lo usamos con el módulo "template" de ansible para crear el fichero remoto:
+##### Problemas
+
+En un principio, para iniciar el comando lo convertí en una tarea asíncrona de ansible, tal y como se cuenta en la [documentación oficial](http://docs.ansible.com/playbooks_async.html). Esto, desgraciadamente, no funciona para tareas que queremos que estén corriendo de forma "infinita", ya que al completarse el tiempo especificado en "async" se cierra automáticamente el proceso por mucho que se establezca a 0 el chequeo de aplicación en marcha ("poll"). Por ello, una opción es convertir nuestro proceso en un "servicio upstart", permitiendo así iniciar/detener el servicio mediante el comando `# service <servicio> start/stop`
+
+Para ello creamos el [script de "upstart"](./daibook/templates/webpyupstart.conf) y lo usamos con el módulo **template** de ansible para crear el fichero remoto:
 
 ```
 stop on runlevel [!2345]
@@ -135,4 +139,4 @@ end script
 
 ------------------
 
-[-- Ejercicio 6 --](./ejercicio08.md)
+[-- Ejercicio 6 --](./ejercicio06.md)
