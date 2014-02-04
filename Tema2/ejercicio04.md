@@ -1,4 +1,4 @@
-[--Ejercicio 3--](./ejercicio03.md)
+[-- Ejercicio 3 --](./ejercicio03.md)
 
 ------------------
 
