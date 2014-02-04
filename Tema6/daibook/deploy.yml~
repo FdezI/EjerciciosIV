@@ -1,0 +1,22 @@
+- hosts: azure
+  vars_files:
+    - vars.yml
+  remote_user: "{{ hosts_user }}"
+  sudo: true
+  gather_facts: false
+  tasks:
+    - name: Crear directorio de proyecto
+      file: state=directory path={{ project_root }}
+    - name: Desplegar código
+      git: repo={{ project_repo }} dest={{ project_root }} version={{ branch }}
+    - name: Estableciendo permisos
+      shell: chown -R www-data:www-data {{ project_root }}
+    - name: Creando servicio Upstart
+      template: src=templates/webpyupstart.conf dest=/etc/init/{{ upstart_service }}.conf owner=root group=root mode=0644
+    - name: Iniciar aplicación
+#      shell: service {{ upstart_service }} start
+#      service: name={{ upstart_service }} state=started
+      notify: restart {{ upstart_service }}
+
+  handlers:
+    - include: handlers.yml

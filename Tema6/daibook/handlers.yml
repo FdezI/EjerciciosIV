@@ -1,0 +1,4 @@
+---
+- name: restart {{ upstart_service }}
+  service: name={{ upstart_service }} state=restarted
+  sudo_user: root

@@ -1,0 +1,17 @@
+---
+project_root: /var/www/
+project_repo: https://github.com/FdezI/DAIpr3.git
+upstart_service: webpy
+hosts_user: melki
+system_packages:
+  - git
+  - python
+  - python-dev
+  - python-pip
+  - python-webpy
+  - mongodb
+python_modules:
+  - pymongo
+  - feedparser
+  - tweepy
+  - mako

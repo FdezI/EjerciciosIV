@@ -1,0 +1,13 @@
+- hosts: azure
+  vars_files:
+    - vars.yml
+  remote_user: "{{ hosts_user }}"
+  sudo: yes
+  tasks:
+    - name: Instalar depedencias
+      apt: pkg={{ item }} state=installed update-cache=yes
+      with_items: ${system_packages}
+    - name: Instalar módulos de python
+      pip: name={{ item }}
+      with_items: ${python_modules}
+- include: deploy.yml
