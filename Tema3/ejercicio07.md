@@ -54,11 +54,11 @@ De esta forma damos acceso al cualquier servicio desde el exterior del táper.
 
 ### Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
 
-Para descargar y reproducir la configuración anterior con el script:
+Para descargar y reproducir la configuración anterior con el [script](./scripts/autojuju.sh):
 
     # wget -q http://https://github.com/FdezI/EjerciciosIV/blob/master/Tema3/scripts/autojuju.sh -O /tmp/autojuju && bash /tmp/autojuju -x
 
-El script, además, aporta otras funcionalidades. Para investigarlas:
+El [script](./scripts/autojuju.sh), además, aporta otras funcionalidades. Para investigarlas:
 
     # ./autojuju.sh -h
 
