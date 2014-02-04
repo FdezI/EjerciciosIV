@@ -1,0 +1,21 @@
+{
+	"nginx": {
+		"version"	: "1.4.4",
+		"user"		: "www-data",
+		"port"		: "80"
+	},
+
+	"vim": {
+		"version"	: "7.3.429"
+	},
+
+	"gitproject": {
+		"name"		: "Proyecto base"
+	},
+
+	"run_list": [
+		"recipe[nginx]",
+		"recipe[vim]",
+		"recipe[gitproject]"
+		]
+}
