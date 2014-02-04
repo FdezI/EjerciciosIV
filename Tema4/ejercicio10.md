@@ -6,7 +6,10 @@
 
 ### Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
 
-El [script](./scripts/list_containers.py), hecho en python, puede [descargarse de aquí](./scripts/list_containers.py):
+
+El [script](./scripts/list_containers.py), hecho en python, puede [descargarse de aquí](./scripts/list_containers.py) y usará las variables de entorno de azure para autenticarse.
+
+> Serán necesarias las librerías de azure `# pip install azure`. 
 
 ```
 #! /usr/bin/python
