@@ -3,6 +3,7 @@
 # Autor: Iñaki Fernández Janssens de Varebeke
 # e-mail: inakitinajo@gmail.com
 # Fecha 01/2014
+# Licencia: GPLv1
 
 env_path="$HOME/.juju/environments.yaml"
 pem_path="/root/azure.pem"
