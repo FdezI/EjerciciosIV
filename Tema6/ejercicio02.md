@@ -8,7 +8,7 @@
 
 ##### Introducción
 
-La receta a crear en chef consta de tres elementos:
+La [receta a crear en chef](./chef) consta de tres elementos:
 
 * Servidor web **nginx**.
 
@@ -20,13 +20,13 @@ La estructura del recetario es la siguiente:
 
 <IMAGEN>
 
-En el raíz del directorio tendremos los ficheros de configuración del recetario en sí y el directorio con las distintas recetas según "elemento":
+En el [raíz del directorio](./chef) tendremos los ficheros de configuración del recetario en sí y el directorio con las distintas recetas según "elemento":
 
-* **node.json**: Contendrá información de ejecución de cada elemento (versión, usuario, puerto, etc)
+* [**node.json**](./chef/node.json): Contendrá información de ejecución de cada elemento (versión, usuario, puerto, etc)
 
-* solo.rb: Aquí se indicará la ruta del resto de ficheros y directorios del recetario
+* [**solo.rb**](./chef/solo.rb): Aquí se indicará la ruta del resto de ficheros y directorios del recetario
 
-* cookbooks: Directorio en el que almacenaremos cada elemento con su respectiva receta
+* [**cookbooks**](./chef/cookbooks): Directorio en el que almacenaremos cada elemento con su respectiva receta
 
 > Cada elemento a instalar tendrá, como mínimo, sus propias recetas y un fichero de metadatos.
 
@@ -35,13 +35,13 @@ En el raíz del directorio tendremos los ficheros de configuración del recetari
 
 Proseguiremos a configurar cada uno de los ficheros necesarios, empezando por los ficheros del recetario:
 
-* **./solo.rb**
+* [**./solo.rb**](./chef/solo.rb)
 		
         cookbook_path File.expand_path("../cookbooks", __FILE__)
         json_attribs File.expand_path("../node.json", __FILE__)
 
 
-* **./node.json**
+* [**./node.json**](./chef/node.json)
 
     ```
 {
@@ -67,7 +67,7 @@ Proseguiremos a configurar cada uno de los ficheros necesarios, empezando por lo
 }
     ```
 
-Continuaremos configurando cada uno de los metadatos de los elementos (**"./cookbooks/<elemento>/metadata.rb"**):
+Continuaremos configurando cada uno de los metadatos de los elementos ("./cookbooks/< elemento >/metadata.rb"):
 
 
 ```
@@ -84,15 +84,15 @@ recipe "gitproject", "Receta de creación de un direcotrio mínimo para github"
 
 Configuramos cada una de las recetas:
 
-* ./cookbooks/nginx/recipes/default.rb
+* [./cookbooks/nginx/recipes/default.rb](./chef/cookbooks/nginx/recipes/default.rb)
 
         package 'nginx'
 
-* ./cookbooks/vim/recipes/default.rb
+* [./cookbooks/vim/recipes/default.rb](./chef/cookbooks/vim/recipes/default.rb)
 
         package 'vim'
 
-* ./cookbooks/gitproject/recipes/default.rb
+* [./cookbooks/gitproject/recipes/default.rb](./chef/cookbooks/gitproject/recipes/default.rb)
 
     ```
 directory "/home/melki/gitproject" do
