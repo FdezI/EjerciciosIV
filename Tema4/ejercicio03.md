@@ -7,11 +7,15 @@
 
 ### Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre.
 
+Para manipular las imágenes primero deberemos crearlas. A continuación se mostrarán distintas formas de crear una imagen y tres formatos muy usados.
+
 #### Creción de imágenes de 5M usando distintos formatos:
+
+Los tres formatos en cuestión serán raw (crudo, sin compresión ninguna), qcow2 y vmdk (usado por vmware).
 
 ##### Formato raw (3 formas):
 
-1. Crudo:
+1. "A pelo":
 
         $ dd of=raw1.img bs=1k seek=5120 count=0
 
