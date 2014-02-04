@@ -65,4 +65,4 @@ El script, además, aporta otras funcionalidades. Para investigarlas:
 
 -----------------
 
--- Ejercicio 8 --](./ejercicio08.md)
+[-- Ejercicio 8 --](./ejercicio08.md)
