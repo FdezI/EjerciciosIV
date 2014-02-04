@@ -2,6 +2,10 @@
 
 -------------------
 
+## Ejercicios 6
+
+### Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.
+
 Instalamos jailkit:
 
     $ wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz
@@ -19,11 +23,11 @@ Creamos la carpeta contenedora de nuestras "jaulas":
 
 Apropiamos a root:
 
-   # chown root:root /home/chroots/jailkit
+    # chown root:root /home/chroots/jailkit
 
 Creamos el entorno:
 
-   # jk_init -v -j /home/chroots/jailkit jk_lsh basicshell netutils editors ssh scp
+    # jk_init -v -j /home/chroots/jailkit jk_lsh basicshell netutils editors ssh scp
 
 Creamos al usuario y lo encerramos:
 
