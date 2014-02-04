@@ -17,7 +17,7 @@ Comprobamos que podemos usar lxc:
     > Tendremos que esperar a que se descargue el **so** y se instale en el container.
 
 
-* También puede instalarse en su lugar mediante el template "cloud", el cual descarga e instala la distro de forma distinta:
+* También puede instalarse en su lugar mediante el template *"cloud"*, el cual descarga e instala la distro de forma distinta:
 
         # lxc-create -t ubuntu-cloud -n minube
 
@@ -41,9 +41,9 @@ A continuación comprobaremos los interfaces puente (desde la máquina anfitrion
 
     # brctl show
 
-Lo cual nos mostrará que se ha creado una interfaz puente "lxcbr0" a la cual se les asocian tantas interfaces como máquinas virtualizando con lxd.
+Lo cual nos mostrará que se ha creado una interfaz puente **lxcbr0** a la cual se les asocian tantas interfaces como máquinas virtualizando con lxc.
 
-Si iniciamos la máquina veremos que además se crea una "vethXXXXXX", en este caso: vethF84R6N
+Si iniciamos la máquina veremos que además se crea una **vethXXXXXX**, en este caso: **vethF84R6N**
 
 -----------------
 
