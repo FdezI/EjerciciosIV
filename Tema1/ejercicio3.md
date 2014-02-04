@@ -1,4 +1,4 @@
-[-- Ejercicio 2 --](./ejercicio2.md)
+[-- Ejercicio 2 --](./ejercicio02.md)
 
 --------------------------------
 
@@ -17,29 +17,33 @@
 El primer paso será instalar el programa cde, esto puede realizarse de dirversas formas:
 * Instalarlo desde los repositorios (si disponible):
 
-    # apt-get install cde
+        # apt-get install cde
 
 * Descargarlo desde git y compilarlo:
 
-    # git clone git://github.com/pgbovine/CDE.git
-    # cd CDE
-    # make
-    # make install
+        # git clone git://github.com/pgbovine/CDE.git
+        # cd CDE
+        # make
+        # make install
 
-A continuación empaquetaremos un script hecho en Bash (~/Scripts/lsust) con cde:
-    $ cde bash [~/Scripts/lsust](./scripts/lsust.sh)
+A continuación empaquetaremos un script hecho en Bash ([~/Scripts/lsust](./scripts/lsust.sh)) con cde:
 
-Una vez realizado este paso el paquete estará listo para ser ejecutado en cualquier entorno. Para ello deberemos localizar el “paquete” generado, normalmente bajo la carpeta en la que se está trabajando (“$ pwd”) en una carpeta nombrada “cde-package”. Esta carpeta contiene, entre otros, un ejecutable “cde-exec” y un directorio (cde-root) emulando nuestro sistema de directorios desde el root (/) hasta el script que hemos ejecutado previamente y que querremos ejecutar. Para ejecutar este script en el entorno aislado creado con cde deberemos localizar el script dentro del paquete y ejecutar el fichero que se encuentra en su mismo directorio llamado de la misma forma pero con la extensión “.cde” (de esta forma, aunque el sistema no disponga de la aplicación usada para ejecutar dicho script, en este caso Bash, el programa siga funcionando:
+    $ cde bash ~/Scripts/lsust
+
+Una vez realizado este paso el paquete estará listo para ser ejecutado en cualquier entorno. Para ello deberemos localizar el "paquete" generado, normalmente bajo la carpeta en la que se está trabajando (`$ pwd`) en una carpeta nombrada "cde-package". Esta carpeta contiene, entre otros, un ejecutable "cde-exec" y un directorio (*cde-root*) emulando nuestro sistema de directorios desde el raíz (*/*) hasta el script que hemos ejecutado previamente y que querremos ejecutar. Para ejecutar este script en el entorno aislado creado con cde deberemos localizar el script dentro del paquete y ejecutar el fichero que se encuentra en su mismo directorio llamado de la misma forma pero con la extensión ".cde" (de esta forma, aunque el sistema no disponga de la aplicación usada para ejecutar dicho script, en este caso Bash, el programa siga funcionando:
 
     $ cd cde-package/cde-root/home/inaki/Scripts/
     $ ./lsust.cde
 
 De esta forma ya tenemos comprobado que funciona correctamente, pero para ejecutar el programa en el mismo sistema no necesitamos realizar este empaquetamiento sino para ejecutarlo en sistemas distintos, para ello deberemos transportar el paquete y la mejor forma es “empaquetándolo” y comprimiéndolo en cualquier formato diseñado para este fin, por ejemplo:
-    $ tar -zcvf cde-lsust.tgz cde-package/
 
-> Se puede encontrar un manual básico en: http://www.pgbovine.net/cde/manual/basic-usage.html
+    $ tar -zcvf cde-lsust.tgz cde-package/
 
 
 -------------------------------
 
-[-- Ejercicio 4 --](./ejercicio4.md)
+> Se puede encontrar un manual básico en: http://www.pgbovine.net/cde/manual/basic-usage.html
+
+-------------------------------
+
+[-- Ejercicio 4 --](./ejercicio04.md)
