@@ -31,4 +31,4 @@
 
 -------------------------------------------
 
-[-- Ejercicio 2 --](./ejercicio2.md)
+[-- Ejercicio 2 --](./ejercicio02.md)

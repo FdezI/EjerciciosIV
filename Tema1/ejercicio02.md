@@ -1,4 +1,4 @@
-[-- Ejercicio 1 --](./ejercicio1.md)
+[-- Ejercicio 1 --](./ejercicio01.md)
 
 -----------------------------
 
@@ -28,4 +28,4 @@ Como se puede ver en la tabla anterior, para tiempos de uso del producto inferio
 
 -----------------------------
 
-[-- Ejercicio 3 --](./ejercicio3.md)
+[-- Ejercicio 3 --](./ejercicio03.md)
