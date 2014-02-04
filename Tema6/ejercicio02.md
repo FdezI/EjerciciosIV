@@ -10,11 +10,11 @@
 
 La receta a crear en chef consta de tres elementos:
 
-* Servidor web nginx.
+* Servidor web **nginx**.
 
-* Editor de textos vim (gvim si se tratara de un entorno gráfico)
+* Editor de textos **vim** (gvim si se tratara de un entorno gráfico)
 
-* Creación de un directorio base para proyectos en github, incluyendo el README.md y el "LICENCE"
+* Creación de un **directorio base para proyectos en github**, incluyendo el README.md y el "LICENCE"
 
 La estructura del recetario es la siguiente:
 
@@ -22,25 +22,26 @@ La estructura del recetario es la siguiente:
 
 En el raíz del directorio tendremos los ficheros de configuración del recetario en sí y el directorio con las distintas recetas según "elemento":
 
-* node.json
+* **node.json**: Contendrá información de ejecución de cada elemento (versión, usuario, puerto, etc)
 
-* solo.rb
+* solo.rb: Aquí se indicará la ruta del resto de ficheros y directorios del recetario
 
-* cookbooks
+* cookbooks: Directorio en el que almacenaremos cada elemento con su respectiva receta
 
 > Cada elemento a instalar tendrá, como mínimo, sus propias recetas y un fichero de metadatos.
+
 
 ##### Configuración
 
 Proseguiremos a configurar cada uno de los ficheros necesarios, empezando por los ficheros del recetario:
 
-* ./solo.rb
+* **./solo.rb**
 		
         cookbook_path File.expand_path("../cookbooks", __FILE__)
         json_attribs File.expand_path("../node.json", __FILE__)
 
 
-* ./node.json
+* **./node.json**
 
     ```
 {
@@ -64,7 +65,6 @@ Proseguiremos a configurar cada uno de los ficheros necesarios, empezando por lo
                 "recipe[gitproject]"
                 ]
 }
-
     ```
 
 Continuaremos configurando cada uno de los metadatos de los elementos (**"./cookbooks/<elemento>/metadata.rb"**):
@@ -78,10 +78,12 @@ version                 "0.0.1"
 
 recipe "gitproject", "Receta de creación de un direcotrio mínimo para github"
 ```
+
 > ./cookbooks/gitproject/metadata.rb
 
 
 Configuramos cada una de las recetas:
+
 * ./cookbooks/nginx/recipes/default.rb
 
         package 'nginx'
@@ -92,14 +94,13 @@ Configuramos cada una de las recetas:
 
 * ./cookbooks/gitproject/recipes/default.rb
 
-        ```
+    ```
 directory "/home/melki/gitproject" do
         owner node['user']['name']
         group node['user']['group']
         mode 00755
         action :create
 end
-
 file "/home/melki/gitproject/README.md" do
         owner node['user']['name']
         group node['user']['group']
@@ -107,7 +108,6 @@ file "/home/melki/gitproject/README.md" do
         action :create_if_missing
         content "Proyecto base de GitHub"
 end
-
 remote_file "/home/melki/gitproject/LICENCE" do
         owner node['user']['name']
         group node['user']['group']
@@ -115,11 +115,12 @@ remote_file "/home/melki/gitproject/LICENCE" do
         action :create_if_missing
         source "http://www.gnu.org/licenses/gpl-3.0.txt"
 end
-        ```
+    ```
 
 Ejecutamos el recetario en el sistema que deseemos:
 
     # chef-solo -c chef/solo.rb
+
 
 ------------------
 
