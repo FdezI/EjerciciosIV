@@ -14,14 +14,14 @@ Comprobamos que podemos usar lxc:
 
         # lxc-create -t ubuntu -n micaja
 
-> Tendremos que esperar a que se descargue el **so** y se instale en el container.
+    > Tendremos que esperar a que se descargue el **so** y se instale en el container.
 
 
 * También puede instalarse en su lugar mediante el template "cloud", el cual descarga e instala la distro de forma distinta:
 
         # lxc-create -t ubuntu-cloud -n minube
 
-> Mientras de la primera forma se descargan todos los paquetes y se instalan (como las actualizaciones típicas), la segunda forma descarga primero un .tar.gz (mediante el uso del comando `wget`) y se instala a partir de él, agilizando el proceso.
+    > Mientras de la primera forma se descargan todos los paquetes y se instalan (como las actualizaciones típicas), la segunda forma descarga primero un .tar.gz (mediante el uso del comando `wget`) y se instala a partir de él, agilizando el proceso.
 
 
 *En ambas versiones el usuario y contraseña por defecto son: ubuntu*
