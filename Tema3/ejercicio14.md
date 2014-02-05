@@ -60,4 +60,4 @@ Con esto ya tenemos creada nuestra imagen. Si queremos subir imágenes propias a
 
 ------------------
 
-[**-- Tema 4 --**](./Tema4)
+[**-- Tema 4 --**](../Tema4)
