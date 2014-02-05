@@ -33,6 +33,8 @@
 
 > Se necesita la aplicación sshpass: `# apt-get install sshpass`.
 
+![](./images/ansible_askpass.png "Antes y después de instalar sshpass")
+
 * Si se quiere trabajar sin tener que introducir contraseñas constantemente, siempre se puede copiar nuestra llave pública de ssh al host:
 
         $ ssh-copy-id melki@vmej5.cloudapp.net
@@ -48,10 +50,13 @@
 
     $ ansible azure -u melki -m apt -a "pkg=git"
 
+![](./images/ansible_azure_before_after_git.png "Antes y después de instalar git (sin --ask-pass)")
+
 **Comprobamos** que se han desplegado correctamente los fuentes remotos:
 
     [vmej5]$ tree ~/pr2_iv_dai
 
+![](./images/ansible_azure_dai_sources_deploy.png "Árbol de fuentes desplegados")
 
 ------------------
 
