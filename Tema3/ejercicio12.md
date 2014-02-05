@@ -18,6 +18,7 @@ o mediante el uso de una shell:
 
 > -t indica pseudo-terminal
 
+![](./images/docker_run.png "Ejecución de comando básico con docker")
 
 Para crear el usuario, podemos usar ambos métodos, pero a continuación trabajaremos desde la shell del contenedor:
 
@@ -25,9 +26,13 @@ Para crear el usuario, podemos usar ambos métodos, pero a continuación trabaja
 
 > Cuando sea posible, usar adduser en lugar de useradd es más cómodo.
 
+![](./images/docker_shell_run.png "Obtención de shell con docker y adición de usuario")
+
 Finalmente, para instalar nginx:
 
     [container]# apt-get update && apt-get install nginx -y
+
+![](./images/container_nginx_install.png "Instalación de nginx en nuestro container desde la shell obtenida")
 
 ------------------
 
