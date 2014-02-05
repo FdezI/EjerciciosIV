@@ -111,6 +111,8 @@ Para poder acceder desde el exterior configuraremos un **endpoint de azure**:
 
     $ azure vm endpoint create -n webpy vmej5 80 8080
 
+![](./images/azure_endpoints_config.png "Azure endpoings configuration")
+
 
 ------------------
 
@@ -131,6 +133,10 @@ script
     sudo -u www-data python ejercicio4_2.py 8080
 end script
 ```
+
+
+![](./images/ansible_azure_dai_project_deploy_playbook.png "Proyecto de DAI tras provisionamiento con un playbook de Ansible")
+
 
 
 ------------------
