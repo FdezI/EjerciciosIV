@@ -16,9 +16,11 @@ El usuario y contraseña por defecto es: root
 
     # lxc-start -n midebian
 
-Si al iniciar el sistema comprobamos que no tenemos internet,
+Si al iniciar el sistema comprobamos que no tenemos internet en nuestro contenedor,
 
     # lxc-ls --fancy
+    
+![](./images/lxc_ls_running_without_ip.png "Contenedor midebian sin internet")
 
 una posible solución es ejecutar desde la máquina anfitriona:
 
@@ -28,11 +30,13 @@ una posible solución es ejecutar desde la máquina anfitriona:
 
 > TODO: encontrar solución permanente o automatizar la ejecución de esta.
 
+![](./images/lxc_ls_running_with_ip.png "Contenedor midebian con internet tras ethtool")
+
 
 ### Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro.
 
 
-No sólo fedora tiene problemas, en la distribución probada: Ubuntu 12.10, no hay ningún contenedor que no fuera basado en Debian que funcionara tras probar aproximadamente una decena de ellos (quizás mala suerte)
+No sólo fedora tiene problemas, en la distribución anfitriona probada (Ubuntu 12.10), no hay ningún contenedor que no fuera basado en Debian que funcionara tras probar aproximadamente una decena de ellos (quizás mala suerte).
 
 
 -------------
