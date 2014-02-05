@@ -14,16 +14,18 @@ o mediante el uso de una shell:
 
     # docker run -i -t ubuntu /bin/bash
 
-    > -i de interactivo
+> -i de interactivo
 
-    > -t indica pseudo-terminal
+> -t indica pseudo-terminal
 
 
 Para crear el usuario, podemos usar ambos métodos, pero a continuación trabajaremos desde la shell del contenedor:
 
     [container]# adduser docky
 
-    > Cuando sea posible, usar adduser en lugar de useradd es más cómodo.
+> Cuando sea posible, usar adduser en lugar de useradd es más cómodo.
+
+Finalmente, para instalar nginx:
 
     [container]# apt-get update && apt-get install nginx -y
 
