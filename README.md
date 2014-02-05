@@ -61,3 +61,7 @@ IV - Infraestructuras Virtuales
 * [**Práctica 4**: Virtualización de aplicaciones](https://github.com/IV-GII/Django_Traduccion)
     * [Enunciado](http://jj.github.io/IV/documentos/practicas/4.Aplicaciones)
     * [Práctica](https://github.com/IV-GII/Django_Traduccion)
+
+## Objetivos
+
+* [Asignatura completa](https://github.com/IV-GII/GII-2013/blob/master/meta/FdezI.md)
