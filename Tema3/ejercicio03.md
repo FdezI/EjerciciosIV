@@ -22,7 +22,7 @@ Si al iniciar el sistema comprobamos que no tenemos internet en nuestro contened
     
 ![](./images/lxc_ls_running_without_ip.png "Contenedor midebian sin internet")
 
-una posible solución es ejecutar desde la máquina anfitriona:
+una [posible solución](./images/ethtool.png) es ejecutar desde la máquina anfitriona:
 
     # ethtool -K vethSSB0HF tx off
 
