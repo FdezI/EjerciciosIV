@@ -10,6 +10,9 @@ A continuación deberá montarse el disco deseado desde el namespace creado ante
 
     # mount disco.iso /mnt/
 
+![](./images/create_mount_namespace.png "Creación de namespace y montaje de disco en éste")
+
+
 ----------------------------------
 
 [-- Ejercicio 2 --](./ejercicio02.md)
