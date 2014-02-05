@@ -23,6 +23,7 @@ Una vez realizado podremos comprobar que el contenido de los directorios syncDir
 
 > El montaje remoto no solo se limita al montaje de directorios, permitiendo también el montaje de ficheros (como es obvio)
 
+![](./images/sshfs.png "Direcotiro remoto y montaje local")
 
 ------------------
 
