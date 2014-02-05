@@ -14,6 +14,7 @@ A continuación, [consultaremos el nombre de la imagen deseada](http://www.vagra
 
     $ vagrant box add squeeze http://dl.dropbox.com/u/54390273/vagrantboxes/Squeeze64_VirtualBox4.2.4.box
 
+![](./images/vagrant_box_add.png "$ vagrant box add")
 
 "Inicializamos" la máquina (creación de fichero de configuración en el directorio actual):
 
@@ -26,9 +27,13 @@ Iniciamos la máquina con:
 
     $ vagrant up
 
+![](./images/vagrant_up.png "$ vagrant up")
+
 Y nos conectamos a ella con:
 
     $ vagrant ssh
+
+![](./images/vagrant_ssh.png "$ vagrant ssh")
 
 
 ------------------
