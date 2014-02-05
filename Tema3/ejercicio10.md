@@ -20,7 +20,7 @@ Instalamos docker:
 
 Para iniciar/detener/reiniciar docker:
 
-   # service docker <start/stop/restart/status>
+    # service docker <start/stop/restart/status>
 
 ------------------
 
