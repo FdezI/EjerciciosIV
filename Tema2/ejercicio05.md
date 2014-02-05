@@ -14,6 +14,7 @@ Creamos el sistema mínimo para alojar el servidor nginx:
 
 
 "Chrooteamos" e instalamos nginx:
+
     # chroot /home/chroots/nginx/
 
 
@@ -36,7 +37,9 @@ Iniciamos nginx:
     # service nginx start
 
 
-Listo, podemos ver nginx funcionando, bien desde cualquier navegador web a la dirección IP del PC o mediante alguna herramienta de petición url estilo curl (# apt-get install curl), con # curl localhost.
+Listo, podemos ver nginx funcionando, bien desde cualquier navegador web a la dirección IP del PC o mediante alguna herramienta de petición url estilo curl (`# apt-get install curl`), con `# curl localhost`.
+
+![](./images/comp_nginx.png "Nginx en chroot vs Nginx en sistema anfitrión")
 
 
 --------------------
