@@ -9,9 +9,9 @@
 
 En el [ejercicio anterior](./ejercicio03.md) podemos ver cómo instalar un sistema debian. Una vez dentro del sistema debian se pueden instalar aplicaciones mediante el `apt-get install` (siempre y cuando dispongamos de internet), compilar algún fuente del que dispongamos (para ello es necesario disponer previamente de herramientas de compilación, tal como las **build-essentials**) o bien "copiarle" alguna aplicación lista para usar:
 
-![](.images/machines_comparision.png "Comparación de sistema chroot y anfitrión")
+![](./images/machines_comparision.png "Comparación de sistema chroot y anfitrión")
 
-![](.images/run_app.png "Ejecución de aplicación dentro de jaula")
+![](./images/run_app.png "Ejecución de aplicación dentro de jaula")
 
 
 ------------------
