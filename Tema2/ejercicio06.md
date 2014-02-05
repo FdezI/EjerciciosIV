@@ -39,8 +39,9 @@ Editamos el fichero /etc/passwd para darle la shell bash al usuario (recomendado
 
     # vim /etc/passwd
 
+![](./images/user_check.png "Adición de la shell bash al usuario userj")
 
-Llegados a este punto está (si no se ha cometido ningún error ni saltado ningún paso) todo listo para conectarse a la jaula:
+Llegados a este punto está (si no se ha cometido ningún error ni saltado ningún paso) todo listo para conectarse a la jaula.
 
 
 ------------------
