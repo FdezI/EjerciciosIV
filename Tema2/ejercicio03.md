@@ -15,6 +15,9 @@ Instalación del sistema debian elegido:
 
 > Si no se dispone del comando debootstrap: `# apt-get install debootstrap`
 
+![](./images/machines_comparision.png "Comparación entre el chroot y el anfitrión"
+)
+
 ### Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
 
 En el momento de usar el sistema con la herramienta chroot es recomendable montar los directorios básicos de todos sistema linux para evitar problemas:
@@ -37,7 +40,7 @@ Nuevamente, deberemos montar en él los directorios básicos de dispositivo, pro
 
     # mount --bind /dev /home/chroots/fedora/dev
     # mount -t proc proc /home/chroots/fedora/proc
-    # mount -t sysfs sys /home/chrootsy/fedora/sys
+    # mount -t sysfs sys /home/chroots/fedora/sys
 
 > Para acceder a ella: `# chroot /home/chroot/fedora/`
 
