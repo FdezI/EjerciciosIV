@@ -4,8 +4,7 @@
 
 ## Ejercicios 8
 
-### Configurar tu máquina virtual usando vagrant con el provisionador
-ansible.
+### Configurar tu máquina virtual usando vagrant con el provisionador ansible.
 
 Modificamos el fichero [Vagrantfile](./vagrant/Vagrantfile) dejándolo:
 
@@ -48,6 +47,10 @@ De esta forma, ansible se encargará de instalar nginx y mantenerlo actualizado 
     $ vagrant provision
 
 o al iniciar la máquina (`$ vagrant up`).
+
+
+![](./images/vagrant_ansible_provision.png "Vagrant provision, with ansible")
+
 
 > La máquina provisionada necesita "python" para poder usar ansible.
 
