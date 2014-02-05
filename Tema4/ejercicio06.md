@@ -76,12 +76,13 @@ Para crear un dispositivo usando XFS una vez instalado ceph deberemos:
 
         $ ceph -s
 
+    ![](./images/ceph.png "Estado de Ceph")
 
 6. Montamos nuestro nuevo sistema de ficheros de objetos:
 
         # mount -t ceph localhost:/ /mnt/ceph/
 
-
+    ![](./images/ceph_df.png "$ df -h, ceph montado")
 
 ------------------
 
