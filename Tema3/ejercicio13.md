@@ -16,6 +16,7 @@ Crear una imagen persistente a partir del contenedor es tan sencillo como obtene
 
 > Creamos la imagen persistente
 
+![](./images/docker_commit.png "Creación de imagen persistente a partir del ID del container iniciado")
 
 
 ------------------
