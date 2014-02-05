@@ -24,7 +24,9 @@ A continuación se deberá modificar el fichero de configuración de juju **"~/.
 
 * **storage-account-name**: visible con `$ azure storage account list`
 
-Subimos el certificado a **azure** (únicamente posible mediante su interfaz web) accediendo a **Configuración → Certificados de administración → Cargar** y seleccionando el ".cert" creado anteriormente.
+Subimos el certificado a [azure](https://manage.windowsazure.com) (únicamente posible mediante su interfaz web) accediendo a [**Configuración → Certificados de administración → Cargar**](https://manage.windowsazure.com/@microsoft.onmicrosoft.com#Workspaces/AdminTasks/ListManagementCertificates) y seleccionando el ".cert" creado anteriormente.
+
+![](./images/azure_uploaded_cert.png "Certificado subido, visible en azure")
 
 Una vez configurado activamos el entorno con:
 
@@ -38,11 +40,16 @@ y desplegamos y exponemos la interfaz web de juju:
 
 > Tras unos segundos tendremos lista la interfaz web de juju (para ver la dirección de acceso: `$ juju status`) a la cual podremos loguearnos usando la clave disponible en el parámetro "admin-secret" del fichero "~/.juju/invironments.yaml")
 
-Mediante la interfaz web buscamos "nginx" e instalamos el 'charm' correspondiente. Veremos que en un inicio está en pending (amarillo), lo cual significa que está intentando arrancar. Curiosamente, si se tiene una suscripción "mala" de azure, tal y como es la nuestra, estará en "pending" hasta el final de los días (puede verse el error con `$ juju status` en la máquina 1) al intentar ejecutarse en una segunda máquina virtual, por ello deberemos "migrar" el servicio a nuestra máquina 0 (añadimos una "unidad" de servicio en la máquina 0 y eliminamos la unidad perteneciente a la máquina 1):
+![](./images/juju_azure_status.png "Estado de Juju tras exponer juju-gui, entorno azure")
+
+Mediante la interfaz web buscamos **nginx** e instalamos el **charm** correspondiente. Veremos que en un inicio está en pending (amarillo), lo cual significa que está intentando arrancar. Curiosamente, si se tiene una suscripción "mala" de azure, tal y como es la nuestra, estará en ***pending*** hasta el final de los días (puede verse el error con `$ juju status` en la **máquina 1**) al intentar ejecutarse en una segunda máquina virtual, por ello deberemos "migrar" el servicio a nuestra **máquina 0** (añadimos una "unidad" de servicio en la **máquina 0** y eliminamos la unidad perteneciente a la **máquina 1**):
 
     $ juju add-unit --to 0 nginx
     $ juju destroy-unit nginx/0
     $ juju destroy-machine 1
+
+
+![](./images/juju_azure_gui_nginx_started.png "Interfaz web gráfica de Juju, juju-gui + nginx")
 
 
 ------------------
