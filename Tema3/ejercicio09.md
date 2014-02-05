@@ -23,6 +23,7 @@ Para crear un contenedor con virtinst:
 
 Todos los parámetros pueden encontrarse en su manual respectivo: `man virt-install`
 
+![](./images/virt_manager_fedora1.png "Fedora bajo kvm, abierto con virt-manager")
 
 ------------------
 
