@@ -13,6 +13,7 @@ Para mostrar los puentes configurados en el sistema basta con ejecutar:
 
 > El paquete bridge-utils proporciona dicho comando.
 
+![](./images/brctl_show.png "Interfaces, incluyendo puentes")
 
 
 ### Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
