@@ -17,6 +17,7 @@ Para instalar la versión del respositorio concreto:
 
 > Para activar los repositorios "backports" descontemos la línea correspondiente en `/etc/apt/sources.list`
 
+![](./images/apt_policy_lxc.png "Información de repositorios disponibles que contienen lxc")
 
 -----------------
 
