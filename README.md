@@ -1,7 +1,7 @@
-EjerciciosIV
-============
+IV - Infraestructuras Virtuales
+===============================
 
-Ejercicios de la asignatura IV
+## Ejercicios
 
 * [**Tema 1**: Introducción: conceptos y soporte físico](./Tema1)
 
@@ -41,3 +41,18 @@ Ejercicios de la asignatura IV
         * [Recetario Chef](./Tema6/chef)
         * [Playbook DAI](./Tema6/daibook)
         * [Ficheros Vagrant](./Tema6/vagrant)
+
+## Prácticas
+
+* [**Práctica 1**: Introducción a la computación virtual: Platform as a Service](https://github.com/FdezI/Practica1)
+    * [Enunciado](http://jj.github.io/IV/documentos/practicas/1.PaaS)
+    * [Práctica](https://github.com/FdezI/Practica1)
+* [**Práctica 2**: Técnicas de virtualización Creación de una jaula](https://github.com/FdezI/Practica2)
+    * [Enunciado](http://jj.github.io/IV/documentos/practicas/2.Jaula)
+    * [Práctica](https://github.com/FdezI/Practica2)
+* [**Práctica 3**: Diseño de sistemas usando CPU y almacenamiento virtuales](https://github.com/FdezI/Practica3)
+    * [Enunciado](http://jj.github.io/IV/documentos/practicas/3.MV)
+    * [Práctica](https://github.com/FdezI/Practica3)
+* [**Práctica 4**: Virtualización de aplicaciones](https://github.com/IV-GII/Django_Traduccion)
+    * [Enunciado](http://jj.github.io/IV/documentos/practicas/4.Aplicaciones)
+    * [Práctica](https://github.com/IV-GII/Django_Traduccion)
