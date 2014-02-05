@@ -12,6 +12,7 @@ Para buscar imágenes disponemos del comando `# docker search <distribución>`:
 
 > El propio equipo dockerfile mantiene una imagen de Ubuntu
 
+![](./images/docker_search_ubuntu.png "Búsqueda de imagen de ubuntu, filtrada")
 
 Para descargar todas las versiones del repositorio de ubuntu:
 
@@ -31,6 +32,8 @@ La buscamos:
 
     # docker search centos | grep -i mongodb
 
+![](./images/docker_search_ubuntu.png "Búsqueda de imagen de centos con mongodb")
+
 Y la instalamos:
 
     # docker pull jonhadfield/mongodb
@@ -38,6 +41,8 @@ Y la instalamos:
 Para ver las imágenes instaladas:
 
     # docker images
+    
+![](./images/docker_images.png "Imágenes instaladas")
 
 
 ------------------
