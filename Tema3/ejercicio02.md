@@ -32,6 +32,8 @@ Para ver nuestros contenederos disponibles podemos usar:
 
 > El --fancy proporciona detalles acerca de los containers.
 
+![](./images/lxc_ls_fancy.png "Contenedores detallados")
+
 Como podemos observar, los containers se encuentran detenidos, para iniciarlos:
 
     # lxc-start -n micaja
@@ -44,6 +46,8 @@ A continuación comprobaremos los interfaces puente (desde la máquina anfitrion
 Lo cual nos mostrará que se ha creado una interfaz puente **lxcbr0** a la cual se les asocian tantas interfaces como máquinas virtualizando con lxc.
 
 Si iniciamos la máquina veremos que además se crea una **vethXXXXXX**, en este caso: **vethF84R6N**
+
+![](./images/brctl_show.png "Interfaz puente creada por lxc")
 
 -----------------
 
