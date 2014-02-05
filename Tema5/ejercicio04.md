@@ -15,8 +15,9 @@ El comando a usar es el siguiente:
 
 > De esta segunda forma es como accederemos mediante ssh, instalando en el sistema invitado el paquete `openssh-server`.
 
+![](./images/remmina_lubuntu_vnc_hq.png "Escritorio de Ubuntu con LXDE bajo KVM, abierto con Remmina usando el protocolo VNC")
 
-
+![](./images/remmina_lubuntu_ssh.png "Ubuntu con LXDE bajo KVM, abierto con Remmina usando el protocolo SSH")
 
 ------------------
 
