@@ -12,7 +12,6 @@ Los requisitos actuales de las prácticas de DAI son:
 * python
 * mongodb
 * web.py
-
     * mako
     * feedparser
     * pymongo
