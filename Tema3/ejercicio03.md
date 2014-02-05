@@ -36,7 +36,7 @@ una posible solución es ejecutar desde la máquina anfitriona:
 ### Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro.
 
 
-No sólo fedora tiene problemas, en la distribución anfitriona probada (Ubuntu 12.10), no hay ningún contenedor que no fuera basado en Debian que funcionara tras probar aproximadamente una decena de ellos (quizás mala suerte).
+No sólo fedora tiene [problemas](./images/container_tries_error.png), en la distribución anfitriona probada (Ubuntu 12.10), no hay ningún contenedor que no fuera basado en Debian que funcionara tras probar aproximadamente una decena de ellos (quizás mala suerte).
 
 
 -------------
