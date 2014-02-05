@@ -26,10 +26,12 @@ El provisionamiento se lleva a cabo tanto al iniciar la máquina `$ vagrant up` 
 
     $ vagrant provision
 
+![](./images/vagrant_provision.png "Provisionamiento mediante Vagrant")
+
 
 ##### En caso de encontrar el error:
 
-<IMAGEN>
+![](./images/vagrant_version_error.png "Error de versión")
 
 Seguramente se deba a la versión disponible en los repositorios oficiales de nuestra distribución (en este caso: **1.0**). Para solucionarlo basta con descargar la [última versión oficial](http://www.vagrantup.com/downloads.html) e instalarla.
 
