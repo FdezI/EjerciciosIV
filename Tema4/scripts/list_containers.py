@@ -3,7 +3,7 @@
 # Autor: Iñaki Fernández Janssens de Varebeke
 # e-mail: inakitinajo@gmail.com
 # Fecha 01/2014
-# Licencia: GPLv1
+# Licencia: GPLv2
 
 
 from azure.storage import *
