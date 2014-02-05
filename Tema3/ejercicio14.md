@@ -19,13 +19,15 @@ Los requisitos actuales de las prácticas de DAI son:
     * tweepy
 
 
+
+
 El [Dockerfile](./scripts/Dockerfile) resultante es el siguiente:
 
-´´´
+
+```
 # DAI requirements
 #
 # VERSION               0.0.1
-
 FROM      ubuntu
 MAINTAINER Iñaki Fernández Janssens de Varebeke <inakitinajo@gmail.com>
 
@@ -40,7 +42,8 @@ RUN apt-get install python-mako -y
 RUN apt-get install python-feedparser -y
 RUN apt-get install python-pymongo -y
 RUN apt-get install python-tweepy -y
-´´´
+```
+
 
 Ahora queda únicamente construir la imagen:
 
@@ -49,12 +52,12 @@ Ahora queda únicamente construir la imagen:
 
 Con esto ya tenemos creada nuestra imagen. Si queremos subir imágenes propias al llamado "Docker Index" deberemos crearnos una cuenta y usar:
 
-# docker push FdezI/ubuntu_dai
+    # docker push FdezI/ubuntu_dai
 
 
 ------------------
 
-Más información acerca de crear imágenes: http://docs.docker.io/en/latest/use/builder/
+> Más información acerca de crear imágenes: http://docs.docker.io/en/latest/use/builder/
 
 ------------------
 
