@@ -40,6 +40,7 @@ Creamos un taper inicial:
 
     > El [script](./script/autojuju.sh) del [ejercicio 7](./ejercicio07.md) tiene esta posibilidad en cuenta
 
+![](./images/juju_status.png "Estado de Juju")
 
 ### Usándolo, instalar MySQL en un táper.
 
@@ -49,6 +50,7 @@ Depliegue de mysql:
 
 Aunque en un inicio aparecerá que su estado es "pending", éste pasará a "started" tras un rato.
 
+![](./images/juju_mysql.png "Estado de Mysql bajo Juju")
 
 ---------------
 
