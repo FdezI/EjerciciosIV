@@ -19,6 +19,11 @@ Creamos la máquina:
 
 > Atención al espacio en blanco antes de la instrucción, si se deja un espacio antes de ejecutar un comando en terminal, éste no queda guardado en el historial, muy útil para comandos que incluyen contraseñas y otros datos sensibles)
 
+![](./images/vmbuilder_process.png "Proceso de creación de máquina con vmbuilder")
+
+Iniciamos la máquina:
+
+![](./images/vmbmachine_running.png "Máquina creada con vmbuilder iniciada")
 
 -------------------
 
