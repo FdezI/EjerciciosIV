@@ -3,6 +3,7 @@
 	# Nombre: lsust
 	# Autor: Iñaki Fdez
 	# Año: 2007
+	# Licencia: GPLv2
 
 	# El proposito de este script es de automatizar el renombre de ficheros
 	# mediante la sustitución de cadenas
