@@ -32,12 +32,14 @@ Para ver nuestros contenederos disponibles podemos usar:
 
 > El --fancy proporciona detalles acerca de los containers.
 
-![](./images/lxc_ls_fancy.png "Contenedores detallados")
+![](./images/lxc_ls_nube.png "Contenedores detallados")
 
 Como podemos observar, los containers se encuentran detenidos, para iniciarlos:
 
     # lxc-start -n micaja
     # lxc-start -n minube
+
+![](./images/lxc_ls_nube_running.png "Contenedores iniciados")
 
 A continuación comprobaremos los interfaces puente (desde la máquina anfitriona):
 
