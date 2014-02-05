@@ -44,12 +44,15 @@ Añadimos la relación:
 
     $ juju add-relation mediawiki:db mysql
 
+![](./images/juju_mediawiki.png "Juju con mediawiki y mysql relacionados")
 
 En caso de querer hacer el servicio instalado accesible al público se hará con:
 
     $ juju expose mediawiki
 
 De esta forma damos acceso al cualquier servicio desde el exterior del táper.
+
+![](./images/juju_mediawiki_exposed.png "Mediawiki bajo Juju desde navegador")
 
 
 ### Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
