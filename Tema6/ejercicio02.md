@@ -18,7 +18,7 @@ La [receta a crear en chef](./chef) consta de tres elementos:
 
 La estructura del recetario es la siguiente:
 
-<IMAGEN>
+![](./images/chef_tree.png "Estructura del recetario")
 
 En el [raíz del directorio](./chef) tendremos los ficheros de configuración del recetario en sí y el directorio con las distintas recetas según "elemento":
 
@@ -120,6 +120,8 @@ end
 Ejecutamos el recetario en el sistema que deseemos:
 
     # chef-solo -c chef/solo.rb
+
+![](./images/chef_after_run.png "Chef run")
 
 
 ------------------
