@@ -21,6 +21,8 @@ Instalamos docker:
 Para iniciar/detener/reiniciar docker:
 
     # service docker <start/stop/restart/status>
+    
+![](./images/docker_status.png "Estado del servicio docker")
 
 ------------------
 
